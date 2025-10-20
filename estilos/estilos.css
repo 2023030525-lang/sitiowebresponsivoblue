@@ -1,0 +1,156 @@
+:root {
+  --navy: #003366;
+  --navy-light: #335c85;
+  --navy-lighter: #668cb3;
+  --text-light: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(to bottom, var(--navy), var(--navy-light));
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background-color: var(--navy);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.3rem;
+}
+
+/* NAV */
+nav {
+  background-color: var(--navy-light);
+  display: flex;
+  flex-wrap: wrap; /* <-- clave para responsividad */
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.8rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--navy-lighter);
+}
+
+/* MAIN */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  border-left: 6px solid var(--navy-lighter);
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+/* FIGURES Y MULTIMEDIA */
+figure {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+figure img, video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #d9e2f0;
+}
+
+/* ASIDE */
+aside {
+  background-color: rgba(0,0,0,0.2);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--navy);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* Tablets */
+@media (max-width: 900px) {
+  main {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav {
+    gap: 0.8rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+  header {
+    padding: 1.5rem 0.5rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    padding: 1rem;
+    margin: 1rem 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
