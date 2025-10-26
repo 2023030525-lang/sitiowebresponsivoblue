@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Programación Web - Ingeniería en Tecnologías de la Información</title>
   <link rel="stylesheet" href="estilos/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
   <header>
@@ -12,12 +14,13 @@
     <p>Asignatura: <strong>Programación Web</strong></p>
   </header>
 
-  <nav>
-    <a href="#programa">Programa educativo</a>
-    <a href="#proposito">Propósito</a>
-    <a href="#unidades">Unidades</a>
-    <a href="#temas">Temas</a>
-  </nav>
+    <nav>
+      <a href="#programa" title="Programa educativo"><i class="fa-solid fa-graduation-cap"></i><span> Programa educativo</span></a>
+      <a href="#proposito" title="Propósito"><i class="fa-solid fa-lightbulb"></i><span> Propósito</span></a>
+      <a href="#unidades" title="Unidades"><i class="fa-solid fa-layer-group"></i><span> Unidades</span></a>
+      <a href="#temas" title="Temas"><i class="fa-solid fa-book"></i><span> Temas</span></a>
+    </nav>
+
 
   <main>
     <section id="introduccion">
@@ -99,5 +102,15 @@
   <footer>
     <p>&copy; 2025 Universidad Tecnológica - Asignatura: Programación Web | Diseño por [Tu Nombre]</p>
   </footer>
+
+
+  
+  
+<script>
+  window.addEventListener('scroll', () => {
+    document.body.classList.toggle('scrolled', window.scrollY > 10);
+  });
+</script>
+ 
 </body>
 </html>
